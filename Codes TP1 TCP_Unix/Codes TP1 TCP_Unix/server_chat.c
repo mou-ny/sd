@@ -54,7 +54,7 @@ int main() {
         printf("\nClient connected!\n");
 
         while ((read_size = recv(dfs_client, buffer, sizeof(buffer), 0)) > 0) {
-            buffer[read_size] = '\0';
+            buffer[read_size] = '\0';&
             printf("\nReceived: \"%s\"\n", buffer);
 
             char temp[1024];

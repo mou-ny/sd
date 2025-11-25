@@ -59,6 +59,7 @@ int main() {
             exit(1);
         }
 
+        //checking all file descriptors
         for (int fd = 0; fd <= max_fd; fd++) {
 
             if (FD_ISSET(fd, &read_fds)) {
